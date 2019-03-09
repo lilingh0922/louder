@@ -509,6 +509,9 @@
     .travel-itinerary-day .container {
         padding: 0 10px 40px 0;
     }
+    .spot_box .spot{
+        border: 1px solid white;
+    }
     .spot_box .spot .option{
          display: none;
     }
@@ -851,6 +854,11 @@
     /*作業說明*/
     .travel-description {
         padding: 10px;
+    }
+
+    footer{
+        height: 15px;
+        background: #333333;
     }
 }
 
