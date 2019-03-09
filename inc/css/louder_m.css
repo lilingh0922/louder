@@ -509,7 +509,10 @@
     .travel-itinerary-day .container {
         padding: 0 10px 40px 0;
     }
-    .spot_box .spot:hover .txt_box{
+    .spot_box .spot .option{
+         display: none;
+    }
+    .spot_box .spot .txt_box{
         display: none;
     }
     .spot_box .spot:hover .txt_box .location {
