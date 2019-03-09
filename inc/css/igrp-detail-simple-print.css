@@ -1,0 +1,472 @@
+@page {
+    margin: 2cm;
+}
+
+body {
+    width: auto;
+        font-size: 14pt;
+}
+
+img {
+    page-break-inside: avoid;
+}
+
+div {
+    /* page-break-inside: auto;
+    page-break-after: auto;*/
+    /*   page-break-before: always;
+    page-break-inside: always;*/
+}
+
+#travel-highlight {
+    page-break-before: always;
+}
+
+.travel-itinerary-spots {
+    page-break-inside: auto;
+}
+
+#travel-highlight .topic,
+.travel-highlight .warning .txt_box .title,
+.travel-itinerary-title {
+    page-break-after: avoid;
+}
+
+.travel-itinerary-spots,
+.travel-itinerary-spots .spot:first-child {
+    page-break-before: avoid;
+}
+
+
+
+
+a,
+span,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+select,
+textarea,
+p,
+blockquote,
+th,
+td {
+
+    /* color: black!important;*/
+    /* background-color: transparent!important;*/
+}
+
+.star-container {
+    width: 860px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.txt_ct {
+    text-align: center;
+}
+
+
+
+/*header*/
+
+.header {
+    padding-right: 160px;
+    min-height: 160px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.travelTitle {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.travelTitle .price {
+    color: #ff4200;
+}
+.travelTitle .note {
+    font-size: 16px;
+}
+
+.main {
+    /* display: flex;*/
+}
+
+.main .box {
+    padding: 5px;
+}
+
+
+
+
+.blank {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px dashed gray;
+    float: left;
+}
+
+.qrcode {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    line-height: 250px;
+    top: 0;
+    font-size: 13px;
+}
+.stamp {
+    width: 160px;
+    height: 120px;
+    text-align: center;
+    line-height: 200px;
+
+    font-size: 12px;
+}
+
+.blank img {
+    width: 100%;
+}
+
+
+
+
+
+.brief span {
+padding-right: 6px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/*Schedule 行程*/
+
+.schedule {
+
+    line-height: 20px;
+}
+
+.schedule .title {
+line-height: 26px;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    text-align: center;
+    position: relative;
+}
+
+.schedule .title img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.schedule .title .txt {
+    z-index: 2;
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+.schedule .day {
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid #601987;
+    position: relative;
+}
+
+.schedule .day:nth-child(odd) img {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+}
+
+.schedule .day:nth-child(even) img {
+    display: none;
+}
+
+.schedule .day span,
+.schedule .day div {
+    z-index: 2;
+}
+
+.schedule .day .daycount {
+    font-weight: bolder;
+    min-width: 40px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.schedule .day .daycount:before {
+    content: "DAY";
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.schedule .day .content span {
+    display: block;
+    font-size: 12pt;
+    line-height: 20pt;
+    color: #808080;
+
+}
+
+.schedule .day .content span:first-child {
+    font-weight: bolder;
+    color: black;
+    font-size: 16pt;
+    line-height: 28px;
+}
+
+.schedule .day .content i {
+    font-size: 14px;
+    margin: 2px;
+    width: 20px;
+}
+
+
+
+
+/*.flight*/
+
+.flight_detail {
+    margin: 10px 0;
+}
+
+.flight_detail .title {
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.flight_detail .box .title .tag {
+    border: 2px solid #932C8B;
+    color: #932C8B;
+    border-radius: 2px;
+    padding: 1px;
+    margin-right: 6px;
+}
+
+.flight_detail .box .flights_box .flight {
+    display: flex;
+    padding-left: 50px;
+}
+
+.flight_detail .box .flights_box .flight>div {
+    padding-right: 20px;
+}
+
+.flight_detail .box .flights_box .flight .flight_time .time:first-child:after {
+    content: "-";
+    padding: 2px;
+}
+
+.flight_detail .box .flights_box .flight .airline {
+    min-width:200px;
+}
+
+.others {
+    display: flex;
+    justify-content: space-between;
+     page-break-inside: avoid;
+}
+
+/*其他出發日*/
+.travel-otherday{
+    margin-top: 20px;
+}
+.travel-otherday .title{
+  line-height: 26px;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    text-align: center;
+    position: relative;
+}
+.travel-otherday .title img{
+      position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+.travel-otherday .title span{
+    z-index: 2;
+    color:#ffffff;
+    font-weight: bolder;
+}
+.travel-otherday .price_list {
+
+    display: inline-block;
+  
+}
+
+.travel-otherday .price_list .item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.travel-otherday .price_list .item .box {
+    width: 100%;
+    padding-left: 150px;
+    line-height: 30px;
+}
+
+.travel-otherday .price_list .item .box a {
+    display: inline-block;
+    margin: 0 5px;
+        color: rgb(55, 71, 79);
+
+}
+.travel-otherday .price_list .item .box a:hover{
+    text-decoration: underline;
+} 
+
+.travel-otherday .price_list .item .box a.disabled {
+    color: #c2c1c1;
+    text-decoration: line-through;
+}
+
+.travel-otherday .price_list .item .price {
+    line-height: 42px;
+    position: absolute;
+    display: inline-block;
+    left: 5px;
+    top: 0;
+    color: #781a7b;
+    /* color: #ff4200;*/
+    font-weight: bolder;
+}
+
+
+
+
+
+/*功能鍵*/
+
+.page {
+    margin-top: 100px;
+}
+
+.btn_box {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    background: rgba(256, 256, 256, 0.95);
+    box-shadow: 0 0px 5px gray;
+}
+
+.btn_box .btn {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    min-width: 80px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background: #ff4200;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    float: right;
+}
+
+
+.btn_box .btn:hover {
+    background: #932C8B;
+}
+
+.btn_box .link {
+    display: inline-block;
+    color: #008cd7;
+    text-decoration: none;
+    padding: 5px;
+    line-height: 20px;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.btn_box .link:hover {
+    opacity: 0.8;
+    background: #008cd7;
+    color: white;
+    text-decoration: none;
+}
+
+.btn_box .link.current {
+    background: #008cd7;
+    color: white;
+}
+.btn_box .adjust{
+    position: absolute;
+    right: 150px;
+    top: 25px;
+}
+
+@media print {
+    .btn_box {
+        display: none;
+    }
+    .page {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+@media print {
+    .btn_box {
+        display: none;
+    }
+    .page {
+        margin-top: 0px;
+    }
+}
