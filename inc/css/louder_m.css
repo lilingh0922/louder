@@ -609,6 +609,9 @@
 
 
     /* 交通資訊*/
+    .flight_detail .summary .graph .progress_bar .bar .txt i{
+        display: none;
+    }
     .flight_detail .summary:after {
         padding: 0 10px 0 5px;
     }
