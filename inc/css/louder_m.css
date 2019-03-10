@@ -574,6 +574,7 @@
         width: 100%;
         min-width: auto;
         padding: 0 10px;
+        float: left;
     }
     .booking_info {
         width: 100%;
