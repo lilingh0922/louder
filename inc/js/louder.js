@@ -16,6 +16,7 @@ $(function() {
     loadFooter();
     loadNav();
     trafficHoverEffect();
+    openImage();
 
 
 
@@ -32,6 +33,16 @@ loadFooter = function() {
 
 loadNav = function() {
     $("#nav").load("../nav.html");
+}
+function openImage(){
+    $('.travel-itinerary-spots .spot').click(function(){
+        var link =  $(this).css('background-image').replace(/^url\(["']?/, '').replace(/["']?\)$/, '');;
+        
+        window.open(link);
+    })
+    
+
+   
 }
 
 function trafficHoverEffect() {

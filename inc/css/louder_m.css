@@ -763,6 +763,20 @@
         font-size: 40px;
         top: 0;
     }
+
+.travel-itinerary-title .title .type{
+        color: #8b48a0;
+    background: white;
+    border-color: white;
+    position: relative;
+    top: -10px;
+    display: block;
+    text-align: center;
+
+
+}
+
+
     .travel-itinerary-day .container {
         border: 0px solid transparent;
         padding: 0 0 40px 0;

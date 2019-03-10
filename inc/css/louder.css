@@ -83,9 +83,11 @@ body {
     font-size: 14px;
     padding: 0;
 }
-.path .breadcrumb>li{
+
+.path .breadcrumb>li {
     display: inline-block;
 }
+
 .path .breadcrumb>li a {
     color: #666666;
     transition: .3s;
@@ -186,7 +188,7 @@ body {
 /* 功能鍵 */
 
 .shareIcon {
-    width: 35px!important;
+    width: 35px !important;
     position: fixed;
     width: 35px;
     top: calc(50% - 30*4px);
@@ -1096,13 +1098,13 @@ body {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.travel-calendar  .days li.current,
-.travel-calendar  .days li.available.current:hover {
+.travel-calendar .days li.current,
+.travel-calendar .days li.available.current:hover {
     border: 1px solid #42275a;
 }
 
-.travel-calendar  .days li.current.available .date,
-.travel-calendar  .days li.current.available:hover .date {
+.travel-calendar .days li.current.available .date,
+.travel-calendar .days li.current.available:hover .date {
     background: #42275a;
     color: white;
     transition: 0.2s;
@@ -1152,26 +1154,27 @@ body {
 }
 
 .travel-calendar .days li i:before {
-     font-family: FontAwesome;
-     font-weight: normal;
+    font-family: FontAwesome;
+    font-weight: normal;
     padding-right: 2px;
 }
 
 .travel-calendar .days li i:after {
-   font-family: 'icomoon';
+    font-family: 'icomoon';
     content: "\e906";
     color: #f4ecf5;
     position: absolute;
     left: -16px;
     font-size: 22px;
     top: 0px;
-   
+
 }
+
 /*firefox*/
 @-moz-document url-prefix() {
     .travel-calendar .days li i:after {
-        font-size:23px;
-          left: -17px;
+        font-size: 23px;
+        left: -17px;
     }
 }
 
@@ -1232,7 +1235,7 @@ body {
 .panel-collapse.collapse {
     display: block;
     visibility: visible;
-    height: auto!important;
+    height: auto !important;
 }
 
 
@@ -1241,7 +1244,7 @@ body {
 .panel-collapse.collapse {
     display: block;
     visibility: visible;
-    height: auto!important;
+    height: auto !important;
 }
 
 
@@ -1406,7 +1409,7 @@ body {
 }
 
 .flight_detail .summary .info {
-  width: 150px;
+    width: 150px;
     text-align: center;
     padding: 0 20px;
 }
@@ -1421,7 +1424,7 @@ body {
 .flight_detail .summary .info .time .note {
     font-size: 12px;
     color: red;
-   
+
 }
 
 
@@ -1549,7 +1552,7 @@ body {
     top: 0;
     color: white;
     line-height: 80px;
-   max-height: 300px;
+    max-height: 300px;
     background: #141E30;
 
     background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85));
@@ -1948,6 +1951,20 @@ body {
     margin: 0px;
 }
 
+.travel-itinerary-title .title .type {
+    position: relative;
+   
+    left: -5px;
+    color: white;
+    background: #8b48a0;
+    display: inline-block;
+    border: 1px solid;
+    padding: 0 10px;
+
+    border-radius: 100px;
+
+}
+
 .travel-itinerary-title .title i.icon {
     position: relative;
     top: 2px;
@@ -2228,12 +2245,16 @@ body {
     display: block;
     background: linear-gradient(to bottom, rgba(244, 243, 243, 0) 60%, rgba(244, 243, 243, 1) 95%);
 }
+
 @media screen\0 {
-.spot_box .spot.only_word .txt_box:after,.spot_box .spot:hover .txt_box:after{
-    display: none;
-}
+
+    .spot_box .spot.only_word .txt_box:after,
+    .spot_box .spot:hover .txt_box:after {
+        display: none;
+    }
 
 }
+
 .spot_box.grid_1 .txt_box .location,
 .spot_box.grid_2 .txt_box .location {
     margin-bottom: 10px;
@@ -3189,16 +3210,20 @@ a.link:hover {
 ul.list_num li {
     list-style: decimal;
 }
-ul.list_num li >ul>li{
+
+ul.list_num li>ul>li {
     list-style: disc;
 }
-ul.list_num li >ul>li>ul>li{
+
+ul.list_num li>ul>li>ul>li {
     list-style: circle;
 }
-ul.list_num li.sub{
+
+ul.list_num li.sub {
     list-style: none;
     padding-left: 100px;
 }
+
 ul li.imp {
     color: #ff4200;
 }
@@ -3236,7 +3261,7 @@ ul li.imp {
 }
 
 .shareIcon .tooltip>.tooltip-arrow {
-    border-left-color: transparent!important;
+    border-left-color: transparent !important;
 }
 
 
@@ -3403,6 +3428,7 @@ ul li.imp {
     0% {
         height: 0px;
     }
+
     40% {
         height: 20px;
     }
@@ -3424,6 +3450,7 @@ ul li.imp {
     0% {
         margin-top: 0px;
     }
+
     40% {
         margin-top: 20px;
     }
