@@ -17,6 +17,8 @@ $(function() {
     loadNav();
     trafficHoverEffect();
     openImage();
+    isShrink();
+
 
 
 
@@ -34,15 +36,23 @@ loadFooter = function() {
 loadNav = function() {
     $("#nav").load("../nav.html");
 }
-function openImage(){
-    $('.travel-itinerary-spots .spot').click(function(){
-        var link =  $(this).css('background-image').replace(/^url\(["']?/, '').replace(/["']?\)$/, '');;
-        
+
+function openImage() {
+    $('.travel-itinerary-spots .spot').click(function() {
+        var link = $(this).css('background-image').replace(/^url\(["']?/, '').replace(/["']?\)$/, '');;
+
         window.open(link);
     })
-    
 
-   
+
+
+}
+
+function isShrink() {
+    $('#is-shrink').on("click", function() {
+        $('.travel-itinerary-spots').toggle('slow');
+    })
+
 }
 
 function trafficHoverEffect() {
@@ -99,50 +109,50 @@ function calendar_open() {
 }
 
 
-function fixed_menu() {　
+function fixed_menu() {
 
-    $(window).bind('scroll resize', function() {　　
-        var $this = $(this);　　
+    $(window).bind('scroll resize', function() {
+        var $this = $(this);
         var $this_Top = $this.scrollTop();
 
-        　　 //當高度小於100時，關閉區塊 
-        　　
-        if ($this_Top < 850) {　　　 $('#travel-innerMenu-fixed').stop().animate({ top: "-150px" });　　 }　　
-        if ($this_Top > 850) {　　　 $('#travel-innerMenu-fixed').stop().animate({ top: "0px" });　　 }
-        if ($this_Top > 850) {　　　 $('.fixed-menu-1').addClass('active');　　 }
-        if ($this_Top > 1200) {　　　
-            $('.fixed-menu-1').removeClass('active');　　　
+        //當高度小於100時，關閉區塊 
+
+        if ($this_Top < 850) { $('#travel-innerMenu-fixed').stop().animate({ top: "-150px" }); }
+        if ($this_Top > 850) { $('#travel-innerMenu-fixed').stop().animate({ top: "0px" }); }
+        if ($this_Top > 850) { $('.fixed-menu-1').addClass('active'); }
+        if ($this_Top > 1200) {
+            $('.fixed-menu-1').removeClass('active');
             $('.fixed-menu-2').addClass('active');
         }
-        if ($this_Top > 1700) {　　　
-            $('.fixed-menu-2').removeClass('active');　　　
+        if ($this_Top > 1700) {
+            $('.fixed-menu-2').removeClass('active');
             $('.fixed-menu-3').addClass('active');
         }
-        if ($this_Top > 2500) {　　　
-            $('.fixed-menu-3').removeClass('active');　　　
+        if ($this_Top > 2500) {
+            $('.fixed-menu-3').removeClass('active');
             $('.fixed-menu-4').addClass('active');
         }
-        if ($this_Top > 3000) {　　　
-            $('.fixed-menu-4').removeClass('active');　　　
+        if ($this_Top > 3000) {
+            $('.fixed-menu-4').removeClass('active');
             $('.fixed-menu-5').addClass('active');
         }
-        if ($this_Top < 3000) {　　　
+        if ($this_Top < 3000) {
             $('.fixed-menu-5').removeClass('active');
         }
-        if ($this_Top < 2500) {　　　
+        if ($this_Top < 2500) {
             $('.fixed-menu-4').removeClass('active');
         }
-        if ($this_Top < 1700) {　　　
+        if ($this_Top < 1700) {
             $('.fixed-menu-3').removeClass('active');
         }
-        if ($this_Top < 1200) {　　　
+        if ($this_Top < 1200) {
             $('.fixed-menu-2').removeClass('active');
-        }　　
-        if ($this_Top < 850) {　　　 $('.fixed-menu-1').removeClass('active');　　 }
+        }
+        if ($this_Top < 850) { $('.fixed-menu-1').removeClass('active'); }
 
 
-        　　
-    }).scroll();　
+
+    }).scroll();
 
 }
 
@@ -219,9 +229,9 @@ function activ_swiper() {
 function adjustFontSize() {
     //get inital font size
     getSize();
-     var $target = $(".travelTitle,.introduction .spec .item .txt, .txt_box p,.txt_box .txt,.flight_detail span,.travel-itinerary-day,.travel-itinerary-title .title, .travel-itinerary-food span,.spot .location, .spot .description,.spot .other, .travel-optional .item , .item .title span:first-child, .travel-description,.travel-description ul, .travel-otherday .item .box, .schedule span");
+    var $target = $(".travelTitle,.introduction .spec .item .txt, .txt_box p,.txt_box .txt,.flight_detail span,.travel-itinerary-day,.travel-itinerary-title .title, .travel-itinerary-food span,.spot .location, .spot .description,.spot .other, .travel-optional .item , .item .title span:first-child, .travel-description,.travel-description ul, .travel-otherday .item .box, .schedule span");
 
-   
+
     $("#up").on("click", function() {
         if ((size + 2) <= 24) {
             $target.css("font-size", "+=2");

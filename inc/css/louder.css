@@ -2222,9 +2222,12 @@ body {
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+      justify-content: center;
+ 
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+.spot_box .spot:hover .txt_box {
+     align-content: center;
 }
 
 .spot_box .spot .txt_box:after {
